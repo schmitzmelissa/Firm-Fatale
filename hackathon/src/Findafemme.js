@@ -1,29 +1,42 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Map, GoogleApiWrapper } from 'google-maps-react';
+
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <body>
+const mapStyles = {
+  width: '80%',
+  height: '80%'
+};
 
-      <script type="text/javascript" src="//platform.linkedin.com/in.js">
-      api_key: 776l2kmyn53bu7
-      authorize: true
-      onLoad: onLinkedInLoad
-      scope: r_basicprofile r_emailaddress
-    </script>
-      <div className="App">
-        <header className="App-header">
-          <p>Find a Femme</p>
-          <p> Find a femme near YOU.</p>
+export class FineAFemme extends Component {
+    render() {
+        return (
+          <div>
+          <body>
+            <div className="App">
+                <header className = "App-header">
+                <p>Find-A-Femme</p>
+                <Map
+                    google={this.props.google}
+                    zoom={14}
+                    style={mapStyles}
+                    initialCenter={{
+                     lat: -1.2884,
+                     lng: 36.8233
+                    }}
+                  />
+                </header>
+            </div>
+            </body>
+            </div>
 
-          </header>
 
-      </div>
-      </body>
-    );
-  }
+
+
+        );
+    }
 }
 
-export default App;
+export default GoogleApiWrapper({
+  apiKey: 'AIzaSyDHPclKWBWCitdPzcV29V-OpQ4YvQQ6k5A'
+})(FineAFemme);

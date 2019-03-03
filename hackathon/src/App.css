@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Handlee');
 .App {
   text-align: center;
-  font-family: Handlee;
-  font-size: 40px;
-  background-color: #E1B1AF;
-  color: white;
-  vertical-align: top;
-  margin: 0;
+
 }
+
+
+#map {
+       height: 80%;
+     }
 
 
 
@@ -20,6 +20,19 @@
   font-size: calc(70px + 2vmin);
   color: white;
   display: inline-block;
+}
+
+.App-header1 {
+  background-color: #E1B1AF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(70px + 2vmin);
+  color: black;
+  font-family: Handlee;
+  font-size: 40px;
+  background-color: #E1B1AF;
+  color: white;
 }
 
 .btn{
