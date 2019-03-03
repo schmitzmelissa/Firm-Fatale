@@ -12,7 +12,6 @@ class App extends Component {
           <button className="btn findafemme">Find-a-Femme</button>
           <button className = "btn findafemme">Card Share</button>
         </header>
-
       </div>
       </body>
     );
