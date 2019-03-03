@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Quicksand|Raleway|Josefin+Sans|Abril+Fatface|Cutive');
+
+.header h1{
+    text-align: center;
+    background-color: aliceblue;
+    font-family: Cormorant Garamond;
+    font-weight: lighter;
+    font-size: 70px;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.header p{
+    text-align: center;
+    font-family: Cormorant Garamond;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.header{
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+}
+
