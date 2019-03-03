@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Home from './Home'
+import FindAFemme from './FindAFemme';
+import CardShare from './CardShare';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
-      <body>
-      <div className="App">
-        <header className="App-header">
-          <p>Firm Fatale</p>
-          <button className="btn findafemme">Find-a-Femme</button>
-          <button className = "btn findafemme">Card Share</button>
-        </header>
+      <Router>
+        <div>
 
-      </div>
-      </body>
+          <Route exact path="/" component={Home} />
+          <Route path="/find-a-femme" exact component={FindAFemme} />
+          <Route path="/card-share" exact component={CardShare} />
+
+        </div>
+      </Router>
     );
   }
 }
